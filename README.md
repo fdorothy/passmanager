@@ -1,6 +1,17 @@
 # passmanager
 
-Stateless password manager written in Python, based on the Python script from Stephen Boyer's post here: https://www.stephanboyer.com/post/101/hashpass-a-stateless-password-manager-for-chrome
+This is a stateless (sort of) password manager written in Python, based on Stephen Boyer's post here: https://www.stephanboyer.com/post/101/hashpass-a-stateless-password-manager-for-chrome
 
-I've made a few modifications to the script and am posting it here for personal use and for others to use as well.
+This script combines a key (password) with a domain (facebook.com, github.com, ...) and then hashes the hell out of it, using the first 16 bytes of the result as the password. This script is portable and will generate the same passwords so long as you use the same key and domain.
+
+I've made a few modifications to the original script:
+
+ - Double check that the key is valid
+ - Optionally store / retrieve domains from 'domains.txt' on disk
+ - Show passwords in batch with the domains.txt file
+
+Domains are easy to forget. When you enter a new domain the script will ask if you would like to save it to a file. Domains are appended to 'domains.txt' in the local directory. You can use this as a way to backup the list of domains.
+
+Storing your domains in 'domains.txt' is completely optional. People tend to have very predictable domains, so if you are being attacked then chances are your domains will be easy to guess anyway.
+
 
