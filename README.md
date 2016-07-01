@@ -12,6 +12,6 @@ I've made a few modifications to the original script:
 
 Domains are easy to forget. When you enter a new domain the script will ask if you would like to save it to a file. Domains are appended to 'domains.txt' in the local directory. You can use this as a way to backup the list of domains.
 
-Storing your domains in 'domains.txt' is completely optional. People tend to have very predictable domains, so if you are being attacked then chances are your domains will be easy to guess anyway.
+Storing your domains in 'domains.txt' is completely optional. Store them wisely.
 
 
